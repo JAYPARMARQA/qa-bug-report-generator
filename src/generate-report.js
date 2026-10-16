@@ -1,0 +1,2 @@
+const bug = { id: 'BUG-101', title: 'Checkout button remains disabled', severity: 'High', environment: 'Chrome 128 / Windows 11', steps: ['Add product to cart', 'Open cart', 'Click Checkout'], expected: 'Checkout page opens', actual: 'Button remains disabled' };
+console.log(`# ${bug.id}: ${bug.title}\n\n**Severity:** ${bug.severity}\n\n**Environment:** ${bug.environment}\n\n## Steps to reproduce\n${bug.steps.map((s, i) => `${i + 1}. ${s}`).join('\n')}\n\n## Expected\n${bug.expected}\n\n## Actual\n${bug.actual}`);
